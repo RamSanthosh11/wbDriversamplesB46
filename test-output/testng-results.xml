@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-05T12:04:46 IST" name="Default suite" finished-at="2025-01-05T12:04:59 IST" duration-ms="12515">
+  <suite started-at="2025-01-05T14:18:22 IST" name="Default suite" finished-at="2025-01-05T14:18:28 IST" duration-ms="6238">
     <groups>
     </groups>
-    <test started-at="2025-01-05T12:04:46 IST" name="Default test" finished-at="2025-01-05T12:04:59 IST" duration-ms="12515">
-      <class name="testscripts.LoginTest">
-        <test-method signature="validLogin()[pri:0, instance:testscripts.LoginTest@5fbdfdcf]" started-at="2025-01-05T12:04:46 IST" name="validLogin" finished-at="2025-01-05T12:04:59 IST" duration-ms="12451" status="PASS">
+    <test started-at="2025-01-05T14:18:22 IST" name="Default test" finished-at="2025-01-05T14:18:28 IST" duration-ms="6238">
+      <class name="testscripts.GooglePageTest">
+        <test-method signature="seleniumsearchTest()[pri:0, instance:testscripts.GooglePageTest@156b88f5]" started-at="2025-01-05T14:18:22 IST" name="seleniumsearchTest" finished-at="2025-01-05T14:18:28 IST" duration-ms="6211" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLogin -->
-      </class> <!-- testscripts.LoginTest -->
+        </test-method> <!-- seleniumsearchTest -->
+      </class> <!-- testscripts.GooglePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

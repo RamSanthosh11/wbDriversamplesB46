@@ -23,7 +23,8 @@ public class GooglePageTest {
 	  //WebElement searchBox = driver.findElement(By.className("gLFyf"));
 	  WebElement searchBox = driver.findElement(By.tagName("textarea"));
 	  searchBox.sendKeys("Selenium Tutorial");
-	  searchBox.sendKeys(Keys.ENTER);
+	  //searchBox.sendKeys(Keys.ENTER);
+	  searchBox.submit();
 	  System.out.println("Page tittle..."+driver.getTitle());
 	  driver.navigate().back();
 	  
