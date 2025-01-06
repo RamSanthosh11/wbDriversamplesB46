@@ -22,6 +22,15 @@ public class MouseActionsTest {
 	  action.moveToElement(ele1).perform();
 	  WebElement ele2 = driver.findElement(By.linkText("Laptops"));
 	  action.click(ele2).perform();
+	  //double click
+	  WebElement ele3 = driver.findElement(By.xpath("//button[contains(text(),'Copy Text')]"));
+      action.doubleClick(ele3).perform();
+      action.contextClick(ele).perform();
+      
+      //drag and drop
+      action.dragAndDrop(
+    		  driver.findElement(By.id("draggable")), driver.findElement(By.id("droppable"))).perform();
+	  
 	  
   }
 }
