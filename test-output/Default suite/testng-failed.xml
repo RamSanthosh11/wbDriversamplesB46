@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscripts.WindowPopupTest">
+      <class name="testscripts.AutoCompleteTest">
         <methods>
-          <include name="winpop"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- testscripts.WindowPopupTest -->
+      </class> <!-- testscripts.AutoCompleteTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

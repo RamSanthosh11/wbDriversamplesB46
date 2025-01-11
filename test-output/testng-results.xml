@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-11T11:30:19 IST" name="Default suite" finished-at="2025-01-11T11:30:37 IST" duration-ms="18218">
+  <suite started-at="2025-01-11T15:46:08 IST" name="Default suite" finished-at="2025-01-11T15:46:21 IST" duration-ms="13098">
     <groups>
     </groups>
-    <test started-at="2025-01-11T11:30:19 IST" name="Default test" finished-at="2025-01-11T11:30:37 IST" duration-ms="18218">
-      <class name="testscripts.WindowPopupTest">
-        <test-method signature="winpop()[pri:0, instance:testscripts.WindowPopupTest@156b88f5]" started-at="2025-01-11T11:30:19 IST" name="winpop" finished-at="2025-01-11T11:30:37 IST" duration-ms="18189" status="PASS">
+    <test started-at="2025-01-11T15:46:08 IST" name="Default test" finished-at="2025-01-11T15:46:21 IST" duration-ms="13098">
+      <class name="testscripts.AutoCompleteTest">
+        <test-method signature="f()[pri:0, instance:testscripts.AutoCompleteTest@156b88f5]" started-at="2025-01-11T15:46:08 IST" name="f" finished-at="2025-01-11T15:46:21 IST" duration-ms="13040" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- winpop -->
-      </class> <!-- testscripts.WindowPopupTest -->
+        </test-method> <!-- f -->
+      </class> <!-- testscripts.AutoCompleteTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
