@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="ModuleOneTest(failed)">
     <classes>
-      <class name="testscripts.ParametrizationTest">
+      <class name="parallescripts.SampleTwoTest">
         <methods>
-          <include name="validLogin"/>
-          <include name="setup"/>
+          <include name="testtwo"/>
         </methods>
-      </class> <!-- testscripts.ParametrizationTest -->
+      </class> <!-- parallescripts.SampleTwoTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- ModuleOneTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

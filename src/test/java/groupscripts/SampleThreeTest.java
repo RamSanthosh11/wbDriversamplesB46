@@ -1,4 +1,4 @@
-package parallelscripts;
+package groupscripts;
 
 import org.testng.annotations.Test;
 

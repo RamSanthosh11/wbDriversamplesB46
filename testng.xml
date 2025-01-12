@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	
-  <parameter name = "browser" value="edge"/>
-  
-  <test thread-count="5" name="Test">
+<suite name="Suite" thread-count="2" parallel="tests">
+  <test name="ModuleOneTest">
     <classes>
-
-      <class name="testscripts.ParametrizationTest"/>
-     
-
+      <class name="parallescripts.SampleOneTestt"/>
+      <class name="parallescripts.SampleTwoTest"/>
+    </classes>
+  </test>
+  <test name="ModuleTwoTest">
+    <classes>
+      <class name="parallescripts.SampleThreeTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
