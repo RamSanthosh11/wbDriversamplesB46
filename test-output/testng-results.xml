@@ -1,81 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-11T22:56:44 IST" name="Default suite" finished-at="2025-01-11T22:57:01 IST" duration-ms="17580">
+  <suite started-at="2025-01-12T12:21:27 IST" name="Suite" finished-at="2025-01-12T12:21:39 IST" duration-ms="12257">
     <groups>
     </groups>
-    <test started-at="2025-01-11T22:56:44 IST" name="Default test" finished-at="2025-01-11T22:57:01 IST" duration-ms="17580">
-      <class name="testscripts.GoogleSearchTest">
-        <test-method is-config="true" signature="beformeth()[pri:0, instance:testscripts.GoogleSearchTest@f0da945]" started-at="2025-01-11T22:56:44 IST" name="beformeth" finished-at="2025-01-11T22:56:47 IST" duration-ms="2971" status="PASS">
+    <test started-at="2025-01-12T12:21:27 IST" name="Test" finished-at="2025-01-12T12:21:39 IST" duration-ms="12257">
+      <class name="testscripts.ParametrizationTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testscripts.ParametrizationTest@ffaa6af]" started-at="2025-01-12T12:21:27 IST" name="setup" finished-at="2025-01-12T12:21:33 IST" duration-ms="6489" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beformeth -->
-        <test-method signature="seleniumsearch()[pri:1, instance:testscripts.GoogleSearchTest@f0da945]" started-at="2025-01-11T22:56:47 IST" name="seleniumsearch" finished-at="2025-01-11T22:56:53 IST" duration-ms="6765" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Selenium Tutorial - Google Search] but found []]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Selenium Tutorial - Google Search] but found []
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at testscripts.GoogleSearchTest.seleniumsearch(GoogleSearchTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- setup -->
+        <test-method signature="validLogin()[pri:0, instance:testscripts.ParametrizationTest@ffaa6af]" started-at="2025-01-12T12:21:33 IST" name="validLogin" finished-at="2025-01-12T12:21:39 IST" duration-ms="5732" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- seleniumsearch -->
-        <test-method signature="javasearch()[pri:2, instance:testscripts.GoogleSearchTest@f0da945]" started-at="2025-01-11T22:56:53 IST" name="javasearch" finished-at="2025-01-11T22:56:56 IST" duration-ms="2814" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- javasearch -->
-        <test-method signature="cucumbersearch()[pri:3, instance:testscripts.GoogleSearchTest@f0da945]" started-at="2025-01-11T22:56:56 IST" name="cucumbersearch" finished-at="2025-01-11T22:56:59 IST" duration-ms="2457" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cucumbersearch -->
-        <test-method signature="appiumsearch()[pri:4, instance:testscripts.GoogleSearchTest@f0da945]" started-at="2025-01-11T22:56:59 IST" name="appiumsearch" finished-at="2025-01-11T22:57:01 IST" duration-ms="2214" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appiumsearch -->
-        <test-method is-config="true" signature="aftermeth()[pri:0, instance:testscripts.GoogleSearchTest@f0da945]" started-at="2025-01-11T22:57:01 IST" name="aftermeth" finished-at="2025-01-11T22:57:01 IST" duration-ms="275" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermeth -->
-      </class> <!-- testscripts.GoogleSearchTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- validLogin -->
+      </class> <!-- testscripts.ParametrizationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -28,42 +28,46 @@ public class GoogleSearchTest {
 	  driver.close();
 	  
   }
-  @Test(priority=1)
-  public void seleniumsearch() {
+  @Test
+  public void seleniumsearch() throws InterruptedException {
 	 
 	  driver.get("https://www.google.com/");
 	  WebElement searchBox = driver.findElement(By.tagName("textarea"));
 	  searchBox.sendKeys("Selenium Tutorial");
 	  searchBox.submit();
-	  Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search");
+	  Thread.sleep(2000);
+	  Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search page");
   }
-  @Test(priority=2)
-  public void javasearch() {
+  @Test(alwaysRun = true, dependsOnMethods="seleniumsearch")
+  public void javasearch() throws InterruptedException {
 	  
 	  driver.get("https://www.google.com/");
 	  WebElement searchBox = driver.findElement(By.tagName("textarea"));
 	  searchBox.sendKeys("Java Tutorial");
 	  searchBox.submit();
+	  Thread.sleep(2000);
 	  Assert.assertEquals(driver.getTitle(), "Java Tutorial - Google Search");
 
   }
-  @Test(priority=3)
-  public void cucumbersearch() {
+  @Test(enabled=false)
+  public void cucumbersearch() throws InterruptedException {
 	  
 	  driver.get("https://www.google.com/");
 	  WebElement searchBox = driver.findElement(By.tagName("textarea"));
 	  searchBox.sendKeys("Cucumber Tutorial");
 	  searchBox.submit();
+	  Thread.sleep(2000);
 	  Assert.assertEquals(driver.getTitle(), "Cucumber Tutorial - Google Search");
 
   }
-  @Test(priority=4)
-  public void appiumsearch() {
+  @Test(enabled=false)
+  public void appiumsearch() throws InterruptedException {
 	  
 	  driver.get("https://www.google.com/");
 	  WebElement searchBox = driver.findElement(By.tagName("textarea"));
 	  searchBox.sendKeys("Appium Tutorial");
 	  searchBox.submit();
+	  Thread.sleep(2000);
 	  Assert.assertEquals(driver.getTitle(), "Appium Tutorial - Google Search");
 
   }
