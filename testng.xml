@@ -1,15 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" thread-count="2" parallel="tests">
-  <test name="ModuleOneTest">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
     <classes>
+      <class name="groupscripts.SampleOneTest"/>
+      <class name="testscripts.RelativeLoacatersTest"/>
+      <class name="groupscripts.SampleTwoTest"/>
+      <class name="testscripts.DownloadFileTest"/>
+      <class name="testscripts.MouseActionsTest"/>
+      <class name="testscripts.PageLoadTest"/>
+      <class name="testscripts.ExtendReportTest"/>
+      <class name="testscripts.ExpWaitTest"/>
       <class name="parallescripts.SampleOneTestt"/>
+      <class name="testscripts.GoogleSearchTest"/>
       <class name="parallescripts.SampleTwoTest"/>
-    </classes>
-  </test>
-  <test name="ModuleTwoTest">
-    <classes>
+      <class name="testscripts.ParametrizationTest"/>
+      <class name="testscripts.WebTableTest"/>
+      <class name="testscripts.ToolTipTest"/>
+      <class name="testscripts.PropertyFileTest"/>
+      <class name="testscripts.DropdownTest"/>
+      <class name="testscripts.GooglePageTest"/>
+      <class name="testscripts.ShadowDOMTest"/>
+      <class name="testscripts.WindowPopupTest"/>
+      <class name="groupscripts.SampleThreeTest"/>
+      <class name="testscripts.AutoCompleteTest"/>
       <class name="parallescripts.SampleThreeTest"/>
+      <class name="testscripts.FileUploadTest"/>
+      <class name="testscripts.JSExecTest"/>
+      <class name="testscripts.RadiCheckBoxTest"/>
+      <class name="testscripts.LoginTest"/>
+      <class name=".NewTest"/>
+      <class name="testscripts.DisplayTest"/>
+      <class name="testscripts.AlertTest"/>
+      <class name="testscripts.IframeTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
