@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscripts.PropertyFileTest">
+      <class name="testscripts.GoogleSearchTest">
         <methods>
-          <include name="setuptest"/>
-          <include name="validLoginPopertyTest"/>
+          <include name="beformeth"/>
+          <include name="aftermeth"/>
+          <include name="appiumsearch"/>
         </methods>
-      </class> <!-- testscripts.PropertyFileTest -->
+      </class> <!-- testscripts.GoogleSearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

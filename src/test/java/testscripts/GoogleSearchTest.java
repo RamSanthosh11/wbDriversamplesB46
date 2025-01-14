@@ -36,7 +36,7 @@ public class GoogleSearchTest {
 	  searchBox.sendKeys("Selenium Tutorial");
 	  searchBox.submit();
 	  Thread.sleep(2000);
-	  Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search page");
+	  Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search");
   }
   @Test(alwaysRun = true, dependsOnMethods="seleniumsearch")
   public void javasearch() throws InterruptedException {
@@ -60,7 +60,7 @@ public class GoogleSearchTest {
 	  Assert.assertEquals(driver.getTitle(), "Cucumber Tutorial - Google Search");
 
   }
-  @Test(enabled=false)
+  @Test(retryAnalyzer = RetryAnalyserSample.class)
   public void appiumsearch() throws InterruptedException {
 	  
 	  driver.get("https://www.google.com/");
@@ -68,7 +68,7 @@ public class GoogleSearchTest {
 	  searchBox.sendKeys("Appium Tutorial");
 	  searchBox.submit();
 	  Thread.sleep(2000);
-	  Assert.assertEquals(driver.getTitle(), "Appium Tutorial - Google Search");
+	  Assert.assertEquals(driver.getTitle(), "Appium Tutorial - Google Searchs");
 
   }
 }
