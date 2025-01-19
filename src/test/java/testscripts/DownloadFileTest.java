@@ -23,7 +23,7 @@ public class DownloadFileTest {
 	  WebDriver driver =new ChromeDriver(options);
 	  driver.get("https://www.selenium.dev/downloads/");
 	  
-	  driver.manage().window().maximize();
+	  driver.manage().window().maximize();//maximises
 	  Actions actions = new Actions(driver);
 	  Thread.sleep(5000);
 	  
